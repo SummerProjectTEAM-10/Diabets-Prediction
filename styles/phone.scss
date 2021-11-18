@@ -1,0 +1,100 @@
+@mixin phoneCSS {
+    .secondary-heading {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        animation-name: comeFromRight;
+        animation-duration: 3s;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        animation-name: comeFromRight;
+    }
+    .primary-heading {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        animation-name: comeFromRight;
+        animation-duration: 3s;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        text-align: center;
+        animation-name: comeFromLeft;
+        margin-bottom: 1rem;
+    }
+    .pruthiev-info,
+    .sruthi-info,
+    .srevardhani-info,
+    .renita-info,
+    .logeshwaran-info {
+        font-size: 1.1rem;
+        font-family: "Satisfy", cursive;
+    }
+    .pruthiev,
+    .sruthi,
+    .srevardhani,
+    .renita,
+    .logeshwaran {
+        height: 7rem;
+        width: 7rem;
+        margin-top: 4rem;
+    }
+    .input-fields {
+        height: 45rem;
+        background-image: url("./../styles/inputbg.png");
+        background-size: 100% 100%;
+        .input-box {
+            height: 37rem;
+            width: 20rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            text-align: center;
+            padding-top: 3rem;
+            padding-left: 0.5rem;
+        }
+        .inputs {
+            width: 15rem;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid #ff5f7e;
+            &:focus {
+                background: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 5px solid green;
+                width: 18rem;
+            }
+            &::placeholder {
+                font-size: 0.7rem;
+                text-transform: uppercase;
+            }
+        }
+        .input-msg {
+            margin-bottom: 0.3rem;
+            margin-top: 0.1rem;
+            visibility: hidden;
+            text-align: right;
+            margin-right: 2.5rem;
+            font-size: 0.6rem;
+            color: red;
+        }
+        .submit-btn {
+            margin: auto;
+            display: block;
+            width: 5rem;
+            background: #3498db;
+            background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+            color: #000;
+            font-size: 0.9rem;
+            border-radius: 10px;
+            text-transform: uppercase;
+            &:hover {
+                background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+            }
+        }
+    }
+}
