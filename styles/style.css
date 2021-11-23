@@ -1,0 +1,404 @@
+@-webkit-keyframes comeFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes comeFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes comeFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(6rem);
+            transform: translateX(6rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes comeFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(6rem);
+            transform: translateX(6rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes appearLate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearLate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Header Block */
+.header {
+  height: 20rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#cc2b5e), to(#753a88));
+  background-image: linear-gradient(to right bottom, #cc2b5e, #753a88);
+  background-size: cover;
+}
+
+/*First Heading in the Header Block*/
+.primary-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation-name: comeFromLeft;
+          animation-name: comeFromLeft;
+  margin-bottom: 1rem;
+}
+
+/*Second Heading in the Header Block*/
+.secondary-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  color: #fff;
+  font-weight: 600;
+  -webkit-animation-name: comeFromRight;
+          animation-name: comeFromRight;
+}
+
+.article {
+  height: 38rem;
+  -webkit-animation-name: appearLate;
+          animation-name: appearLate;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.ml-image-1 {
+  height: 58vh;
+  background-size: cover;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#eb3349), to(#f45c43));
+  background-image: linear-gradient(to right bottom, #eb3349, #f45c43);
+  height: 38rem;
+}
+
+.ml-image-2 {
+  height: 58vh;
+  background-size: cover;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#43cea2), to(#dd2476));
+  background-image: linear-gradient(to right bottom, #43cea2, #dd2476);
+  height: 38rem;
+}
+
+.ml-image-3 {
+  height: 58vh;
+  background-size: cover;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff512f), to(#28b485));
+  background-image: linear-gradient(to right bottom, #ff512f, #28b485);
+  height: 38rem;
+}
+
+.ml-image-4 {
+  height: 58vh;
+  background-size: cover;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#02aab0), to(#f3a183));
+  background-image: linear-gradient(to right bottom, #02aab0, #f3a183);
+  height: 38rem;
+}
+
+.ml-image-5 {
+  height: 58vh;
+  background-size: cover;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#56ab2f), to(#00cdac));
+  background-image: linear-gradient(to right bottom, #56ab2f, #00cdac);
+  height: 38rem;
+}
+
+/*Respective ppl's Images in the carousel*/
+.pruthiev,
+.sruthi,
+.srevardhani,
+.renita,
+.logeshwaran {
+  height: 15rem;
+  width: 15rem;
+  margin-top: 6rem;
+}
+
+/*Resective ppl's description in the carousel */
+.pruthiev-info,
+.sruthi-info,
+.srevardhani-info,
+.renita-info,
+.logeshwaran-info {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Satisfy", cursive;
+}
+
+/*The entire the block consisting of the background image*/
+.input-fields {
+  height: 50rem;
+  background-image: url("./../styles/inputbg.png");
+  background-size: 100% 100%;
+  -webkit-animation-name: appearLate;
+          animation-name: appearLate;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  /*The white color box*/
+}
+
+.input-fields .input-box {
+  height: 43rem;
+  width: 23rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.input-fields .inputs {
+  width: 18rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #ff5f7e;
+  -webkit-transition-property: scaleX();
+  transition-property: scaleX();
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.input-fields .inputs:focus {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid green;
+  width: 20rem;
+}
+
+.input-fields .inputs::-webkit-input-placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.input-fields .inputs:-ms-input-placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.input-fields .inputs::-ms-input-placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.input-fields .inputs::placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.input-fields .submit-btn {
+  display: block;
+  width: 10rem;
+  background: #3498db;
+  background-image: -webkit-gradient(linear, left top, right top, from(#36d1dc), to(#5b86e5));
+  background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: #000;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: auto;
+  pointer-events: none;
+}
+
+.input-fields .submit-btn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff5f6d), to(#ffc371));
+  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.input-fields .wrapper {
+  cursor: not-allowed;
+}
+
+.input-msg {
+  margin-bottom: 0.7rem;
+  margin-top: 0.3rem;
+  visibility: hidden;
+  text-align: right;
+  margin-right: 2.5rem;
+  font-size: 0.8rem;
+  color: red;
+}
+
+@media (max-width: 900px) {
+  .secondary-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    -webkit-animation-name: comeFromRight;
+            animation-name: comeFromRight;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    animation-name: comeFromRight;
+  }
+  .primary-heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    -webkit-animation-name: comeFromRight;
+            animation-name: comeFromRight;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+    -webkit-animation-name: comeFromLeft;
+            animation-name: comeFromLeft;
+    margin-bottom: 1rem;
+  }
+  .pruthiev-info,
+  .sruthi-info,
+  .srevardhani-info,
+  .renita-info,
+  .logeshwaran-info {
+    font-size: 1.1rem;
+    font-family: "Satisfy", cursive;
+  }
+  .pruthiev,
+  .sruthi,
+  .srevardhani,
+  .renita,
+  .logeshwaran {
+    height: 7rem;
+    width: 7rem;
+    margin-top: 4rem;
+  }
+  .article {
+    height: 20rem;
+  }
+  .input-fields {
+    height: 45rem;
+    background-image: url("./../styles/inputbg.png");
+    background-size: 100% 100%;
+  }
+  .input-fields .input-box {
+    height: 37rem;
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+  }
+  .input-fields .inputs {
+    width: 15rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #ff5f7e;
+  }
+  .input-fields .inputs:focus {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid green;
+    width: 18rem;
+  }
+  .input-fields .inputs::-webkit-input-placeholder {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  .input-fields .inputs:-ms-input-placeholder {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  .input-fields .inputs::-ms-input-placeholder {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  .input-fields .inputs::placeholder {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  .input-fields .input-msg {
+    margin-bottom: 0.3rem;
+    margin-top: 0.1rem;
+    visibility: hidden;
+    text-align: right;
+    margin-right: 2.5rem;
+    font-size: 0.6rem;
+    color: red;
+  }
+  .input-fields .submit-btn {
+    margin: auto;
+    display: block;
+    width: 5rem;
+    background: #3498db;
+    background-image: -webkit-gradient(linear, left top, right top, from(#36d1dc), to(#5b86e5));
+    background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: #000;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  .input-fields .submit-btn:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff5f6d), to(#ffc371));
+    background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+  }
+}
+/*# sourceMappingURL=style.css.map */

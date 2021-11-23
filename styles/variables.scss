@@ -1,0 +1,16 @@
+$headerfontsize : 20rem;
+$background-imagefirstColor : rgba(85, 197, 122, 0.8);
+$background-imagesecondColor : rgba(40, 180, 133, 0.8);
+@mixin header {
+    font-size:2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    animation-duration: 3s;
+    color:#fff;
+    font-weight:600;
+}
+@mixin bgimage{
+    height: 58vh;
+    background-size: cover;
+    text-align: center;
+}

@@ -1,0 +1,171 @@
+@import "./animation.scss";
+@import "./variables.scss";
+@import "./phone.scss";
+
+/*Header Block */
+.header {
+    height: 20rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(204, 43, 94),
+        rgb(117, 58, 136)
+    );
+    background-size: cover;
+}
+/*First Heading in the Header Block*/
+.primary-heading {
+    @include header;
+    text-align: center;
+    animation-name: comeFromLeft;
+    margin-bottom: 1rem;
+}
+/*Second Heading in the Header Block*/
+.secondary-heading {
+    @include header;
+    animation-name: comeFromRight;
+}
+.article {
+    height: 38rem;
+    animation-name: appearLate;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+}
+.ml-image-1 {
+    @include bgimage;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(235, 51, 73),
+        rgb(244, 92, 67)
+    );
+    height: 38rem;
+}
+.ml-image-2 {
+    @include bgimage;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(67, 206, 162),
+        rgb(221, 36, 118)
+    );
+    height: 38rem;
+}
+.ml-image-3 {
+    @include bgimage;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(255, 81, 47),
+        rgb(40, 180, 133)
+    );
+    height: 38rem;
+}
+.ml-image-4 {
+    @include bgimage;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(2, 170, 176),
+        rgb(243, 161, 131)
+    );
+    height: 38rem;
+}
+.ml-image-5 {
+    @include bgimage;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(86, 171, 47),
+        rgb(0, 205, 172)
+    );
+    height: 38rem;
+}
+
+/*Respective ppl's Images in the carousel*/
+.pruthiev,
+.sruthi,
+.srevardhani,
+.renita,
+.logeshwaran {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 6rem;
+}
+/*Resective ppl's description in the carousel */
+.pruthiev-info,
+.sruthi-info,
+.srevardhani-info,
+.renita-info,
+.logeshwaran-info {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Satisfy", cursive;
+}
+/*The entire the block consisting of the background image*/
+.input-fields {
+    height: 50rem;
+    background-image: url("./../styles/inputbg.png");
+    background-size: 100% 100%;
+    animation-name: appearLate;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    /*The white color box*/
+    .input-box {
+        height: 43rem;
+        width: 23rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        text-align: center;
+        // padding-left: 2rem;
+        padding-top: 4rem;
+    }
+    .inputs {
+        width: 18rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid #ff5f7e;
+        transition-property: scaleX();
+        transition-duration: 0.5s;
+        &:focus {
+            background: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 5px solid green;
+            width: 20rem;
+        }
+        &::placeholder {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
+    .submit-btn {
+        display: block;
+        width: 10rem;
+        background: #3498db;
+        background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+        color: #000;
+        border-radius: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: auto;
+        pointer-events: none;
+        &:hover {
+            background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+        }
+    }
+    .wrapper {
+        cursor: not-allowed;
+    }
+}
+.input-msg {
+    margin-bottom: 0.7rem;
+    margin-top: 0.3rem;
+    visibility: hidden;
+    text-align: right;
+    margin-right: 2.5rem;
+    font-size: 0.8rem;
+    color: red;
+}
+@media (max-width: 900px) {
+    @include phoneCSS;
+}
