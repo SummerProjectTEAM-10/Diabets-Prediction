@@ -19,12 +19,12 @@
     />
 
     <!--External Style Sheet -->
-    <link rel="stylesheet" href="./../styles/style.css" />
+    <link rel="stylesheet" href="./../static/styles/styleTemp.css" />
 
     <!--Favicon -->
     <link
       rel="shortcut icon"
-      href="./../styles/favicon_io/android-chrome-512x512.png"
+      href="./../static/styles/favicon_io/android-chrome-512x512.png"
       type="image/x-icon"
     />
 
@@ -54,22 +54,34 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="d-block w-100 ml-image-1">
-              <img src="./../styles/Pruthiev_1-modified.png" class="pruthiev" />
-              <div class="pruthiev-info">
-                I am Pruthiev 3rd year undergraduate in Information Technology
+              <img src="./../static/styles/Shruthi.jpeg" class="sruthi" />
+              <div class="sruthi-info">
+                An exuberant student seeking a responsible opportunity to fully
                 <br />
-                Web Developer and machine learning enthusiats
+                utilize my skills and to improve my knowledge while making a
+                <br />
+                significant contribution to the society
+                <br />
               </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <div class="d-block w-100">
               <div class="d-block w-100 ml-image-2">
-                <img src="./../styles/Pruthiev_1-modified.png" class="sruthi" />
+                <img
+                  src="./../static/styles/images/Srevardhani.jpeg"
+                  class="srevardhani"
+                />
                 <div class="sruthi-info">
-                  I am sruthi thrid year undergraduate in Information Technology
+                  Srevardhani , Enthusiastic student eager to contribute to
+                  society through
                   <br />
-                  Web Developer and machine learning enthusiats
+                  team work, and excellent organizational skills. Motivated to
+                  <br />
+                  learn, grow and excel. Hardworking and Effective Student
+                  <br />
+                  committed to learning, developing skills in machine learning
+                  and programming.
                 </div>
               </div>
             </div>
@@ -78,14 +90,13 @@
             <div class="d-block w-100">
               <div class="d-block w-100 ml-image-3">
                 <img
-                  src="./../styles/Pruthiev_1-modified.png"
-                  class="srevardhani"
+                  src="./../static/styles/images/Renita.jpeg"
+                  class="renita"
                 />
-                <div class="srevardhani-info">
-                  I am srevardhani thrid year undergraduate in Information
-                  Technology
+                <div class="renita-info">
+                  I am V. Renita, 3rd year undergraduate in Information
                   <br />
-                  Web Developer and machine learning enthusiats
+                  Technology Web Developer and machine learning enthusiast
                 </div>
               </div>
             </div>
@@ -93,11 +104,15 @@
           <div class="carousel-item">
             <div class="d-block w-100">
               <div class="d-block w-100 ml-image-4">
-                <img src="./../styles/Pruthiev_1-modified.png" class="renita" />
-                <div class="renita-info">
-                  I am renita thrid year undergraduate in Information Technology
+                <img
+                  src="./../static/styles/images/Logeshwaran.jpeg"
+                  class="logeshwaran"
+                />
+                <div class="logeshwaran-info">
+                  I am Logeshwaran ,thrid year undergraduate in Information
+                  Technology
                   <br />
-                  Web Developer and machine learning enthusiats
+                  Web Developer and Deep learning enthusiats
                 </div>
               </div>
             </div>
@@ -106,11 +121,11 @@
             <div class="d-block w-100">
               <div class="d-block w-100 ml-image-5">
                 <img
-                  src="./../styles/Pruthiev_1-modified.png"
-                  class="logeshwaran"
+                  src="./../static/styles/images/Pruthiev_1-modified.png"
+                  class="pruthiev"
                 />
-                <div class="logeshwaran-info">
-                  I am logeshwaran thrid year undergraduate in Information
+                <div class="pruthiev-info">
+                  I am Pruthiev thrid year undergraduate in Information
                   Technology
                   <br />
                   Web Developer and machine learning enthusiats
@@ -142,30 +157,34 @@
     <!--Carousel Ends-->
 
     <!--Form Begins-->
-    <form action="./index.html" method="post">
+    <form action="/" method="post">
       <div class="input-fields d-flex justify-content-center">
         <div class="input-box align-self-center">
           <input
             type="text"
             class="inputs input-pregnant"
+            name="kids"
             placeholder="No of Kids"
           />
           <div class="input-msg">Hi this is wrong</div>
           <input
             type="text"
             class="inputs input-glucose"
+            name="glucose"
             placeholder="Glucose Level"
           />
           <div class="input-msg">Hi this is wrong</div>
           <input
             type="text"
             class="inputs input-bp"
+            name="blood-pressure"
             placeholder="Blood Pressure"
           />
           <div class="input-msg">Hi this is wrong</div>
           <input
             type="text"
             class="inputs input-skin"
+            name="skin-thickness"
             placeholder="Skin Thickness"
           />
           <div class="input-msg">Hi this is wrong</div>
@@ -173,12 +192,14 @@
           <input
             type="text"
             class="inputs input-insulin"
+            name="insulin"
             placeholder="Insulin"
           />
           <div class="input-msg">Hi this is wrong</div>
           <input
             type="text"
             class="inputs input-bmi"
+            name="bmi"
             placeholder="Body Mass Index"
           />
           <div class="input-msg">Hi this is wrong</div>
@@ -186,39 +207,54 @@
           <input
             type="text"
             class="inputs input-DPF"
+            name="dpf"
             placeholder="Diabetes Pedigree Function"
           />
           <div class="input-msg">Hi this is wrong</div>
 
-          <input type="text" class="inputs input-age" placeholder="Age" />
+          <input
+            type="text"
+            class="inputs input-age"
+            name="age"
+            placeholder="Age"
+          />
           <div class="input-msg">Hi this is wrong</div>
 
           <div class="wrapper">
-            <button type="submit" class="btn submit-btn" disabled>
-              submit
+            <button
+              type="submit"
+              class="btn submit-btn"
+              value="SUBMIT"
+              disabled
+            >
+              SUBMIT
             </button>
           </div>
         </div>
       </div>
     </form>
-    <!--Form Ends-->
-    <!--Jquery CDN  Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    {% if predictions %}
+    <p>The outcome is :{{predictions}}></p>
+    {% endif %}
+      <!--Form Ends-->
+      <!--Jquery CDN  Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+      <!-- Bootstrap JavaScript Libraries -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
 
-    <!--External JavaScript File-->
-    <script src="./../styles/index.js" charset="utf-8"></script>
+      <!--External JavaScript File-->
+      <script src="./../static/styles/index.js" charset="utf-8"></script>
+    </p>
   </body>
 </html>

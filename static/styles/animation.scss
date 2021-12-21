@@ -1,0 +1,28 @@
+@keyframes comeFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-6rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes comeFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(6rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes appearLate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
