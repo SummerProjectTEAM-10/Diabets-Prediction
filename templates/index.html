@@ -34,7 +34,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body style="background-color: #000;">
     <!--Heading Begins-->
     <div class="header d-flex justify-content-center">
       <div class="main-heading align-self-center">
@@ -157,7 +157,7 @@
     <!--Carousel Ends-->
 
     <!--Form Begins-->
-    <form action="/" method="post">
+    <form method="post" autocomplete="off" id="form-fields-inputs">
       <div class="input-fields d-flex justify-content-center">
         <div class="input-box align-self-center">
           <input
@@ -177,14 +177,14 @@
           <input
             type="text"
             class="inputs input-bp"
-            name="blood-pressure"
+            name="bloodPressure"
             placeholder="Blood Pressure"
           />
           <div class="input-msg">Hi this is wrong</div>
           <input
             type="text"
             class="inputs input-skin"
-            name="skin-thickness"
+            name="skinThickness"
             placeholder="Skin Thickness"
           />
           <div class="input-msg">Hi this is wrong</div>
@@ -232,10 +232,11 @@
           </div>
         </div>
       </div>
+        <p class="result-yes">😀😊The patient is normal🤗😄<br><br>😷Stay Safe Stay Healthy😷<br><br>🙏Thanks for Visiting US🙏</p>
+        <p class="result-no">😔😟The patient is diabetic😔😥<br><br>😷Stay Safe Stay Healthy😷<br><br>🙏Thanks for Visiting US🙏</p>
+      
     </form>
-    {% if predictions %}
-    <p>The outcome is :{{predictions}}></p>
-    {% endif %}
+    
       <!--Form Ends-->
       <!--Jquery CDN  Libraries -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

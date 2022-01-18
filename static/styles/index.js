@@ -14,6 +14,10 @@ $(document).ready(function () {
         $(cssSelector)
             .next()
             .html("*" + msg);
+        console.log("Disabled");
+        document.querySelector(".submit-btn").disabled = true;
+        document.querySelector(".submit-btn").style.cursor = "not-allowed";
+        document.querySelector(".submit-btn").style.pointerEvents = "none";
     }
 
     //To make the error disapper when the user fills the data correctly
@@ -21,28 +25,63 @@ $(document).ready(function () {
         $(cssSelector).next().css("visibility", "hidden");
     }
 
-    //called everytime when we change the data in the input field to automatically toggle the button states , disabled and clickable
+    //called everytime when we change the data in the input field to automatically toggle the button states ,
+    //`disabled and clickable
     function isButtonDisabled() {
         if (pregnant && bp && age && dpf && bmi && skin && glucose && insulin) {
             console.log("Abled");
             document.querySelector(".submit-btn").disabled = false;
-            console.log(
-                document.querySelector(".submit-btn").style.cursor,
-                document.querySelector(".submit-btn").style.pointerEvents
-            );
             document.querySelector(".submit-btn").style.cursor = "pointer";
             document.querySelector(".submit-btn").style.pointerEvents = "all";
-            console.log(
-                document.querySelector(".submit-btn").style.cursor,
-                document.querySelector(".submit-btn").style.pointerEvents
-            );
+            $(".wrapper").mouseover(function () {
+                css({
+                    "background-image":
+                        "-webkit-gradient(linear,left top,right top,from(#ff5f6d),to(#ffc371))",
+                    "background-image":
+                        "linear-gradient(to right, #ff5f6d, #ffc371)",
+                    cursor: "not-allowed",
+                    "pointer-events": "none",
+                });
+            });
+            $(".wrapper").css("cursor", "not-allowed");
         } else {
             console.log("Disabled");
             document.querySelector(".submit-btn").disabled = true;
+            document.querySelector(".submit-btn").style.cursor = "not-allowed";
+            document.querySelector(".submit-btn").style.pointerEvents = "none";
             $(".wrapper").css("cursor", "not-allowed");
         }
     }
-
+    $(document).on("submit", "#form-fields-inputs", function (e) {
+        e.preventDefault();
+        const formData = {
+            kids: $(".input-pregnant").val(),
+            glucose: $(".input-glucose").val(),
+            bloodPressure: $(".input-bp").val(),
+            skinThickness: $(".input-skin").val(),
+            insulin: $(".input-insulin").val(),
+            bmi: $(".input-bmi").val(),
+            dpf: $(".input-DPF").val(),
+            age: $(".input-age").val(),
+        };
+        console.log(formData);
+        $.post({
+            type: "POST",
+            url: "/",
+            data: formData,
+            dataType: "json",
+            success: function (response) {
+                console.log(response.result);
+                if (response.result == 0) {
+                    $(".result-yes").css("display", "block");
+                    $(".result-no").css("display", "none");
+                } else {
+                    $(".result-no").css("display", "block");
+                    $(".result-yes").css("display", "none");
+                }
+            },
+        });
+    });
     //Handling pregnant field
     $(".input-pregnant").keyup(function () {
         console.log("Pregnant");

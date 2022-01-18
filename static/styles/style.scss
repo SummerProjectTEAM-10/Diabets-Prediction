@@ -165,6 +165,17 @@
     font-size: 0.8rem;
     color: red;
 }
+p.result-yes {
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 25px;
+    height: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+    background-color: #ff5f6d;
+    width: 50%;
+}
 @media (max-width: 900px) {
     @include phoneCSS;
 }

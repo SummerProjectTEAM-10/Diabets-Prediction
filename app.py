@@ -1,7 +1,8 @@
-from flask import Flask,render_template,request
+import json
+from flask import Flask,render_template,request,jsonify
 import numpy as np
 import DiabetesClassificationModel as dcm
-features = ["kids","glucose","blood-pressure","skin-thickness","insulin","bmi","dpf","age"];
+features = ["kids","glucose","bloodPressure","skinThickness","insulin","bmi","dpf","age"];
 app = Flask(__name__)
 def addBMILabel(input,value):
     if(value < 18.5):
@@ -55,7 +56,12 @@ def home_page():
         else : output = "The patient is normal";
         print("output :",output)
         print("pred :" , predict)
-        return render_template(["index.html","index.css","index.js"],predictions = output);
+        if(predict[0] == 0):
+            #  return render_template(["index.html","index.css","index.js"],Yes = output);
+            return jsonify({'result' : 0});
+        else:
+            # return render_template(["index.html","index.css","index.js"],No = output);
+            return jsonify({'result' : 1});
             
         
 if __name__ == "__main__":
